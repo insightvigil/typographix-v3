@@ -501,8 +501,8 @@ nav.active {
 
     /* -- Section 4 -- */
 
-    #section-4 {
-        margin-top: 10vh;
+    #section-4, #section-5 {
+        margin-top: 50vh;
     }
     .blog-container {
         position: relative;
