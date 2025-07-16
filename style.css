@@ -262,7 +262,7 @@ aside {
     top: 0;
     left: 0;
     background-color: var(--background);
-    width: 100%;
+    width: 100vw;
     z-index: 10;
 }
 
@@ -345,15 +345,25 @@ nav.active {
         --letter-spacing-animation: .1em;
     }
 
+    
+
     nav {
         width: 100%;
         background-color: var(--background);
     }
 
+    nav ul {
+        height: 100vh;
+    }
     .wave > svg:last-child {
         border-bottom: 20px solid #1a1952;
 
     }
+
+    .blog-item {
+        text-align: left;
+    }
+
     footer {
         bottom: 10px;
     }
@@ -361,7 +371,7 @@ nav.active {
 
 /* ---------- Tablet Horizontal ------------- */
 
-@media screen and (min-width:820px) and (max-width:1180px) {
+@media screen and (min-width:870px) and (max-width:1180px) {
     #section-2 h2 {
         margin-top: 45px;
     }
@@ -383,7 +393,7 @@ nav.active {
 }
 
 /*Tablet vertical */
-@media screen and (min-width:820px) and (max-width:1180px) {
+@media screen and (min-width:760px) and (max-width:830px) {
     /* Section 2 */ 
     .main-image {
         height: auto;
@@ -396,4 +406,66 @@ nav.active {
     #section2 h2 {
         margin-top: 65px;
     }
+}
+
+/* Smarth Phones*/ 
+
+@media screen and (min-width: 700px) and (max-width:960px) {
+
+    .main-image {
+        top:10%;
+    }
+   
+
+    .small-image {
+        height:80%;
+    }
+
+    #section-4 h2 {
+        margin-top: 15vh;
+    }
+
+    #section-4 .blog-container {
+        margin-top: 45px;
+    }
+
+     
+
+    
+}
+
+
+/* --------- Smart Phone Vertical -------- */ 
+
+@media screen and (min-width:380px) and (max-width: 450px) {
+
+    h2 {
+        font-size: 3.2rem;
+    }
+    .main-image{
+        
+        width: 90%;
+        border-width: 5px;
+        padding: 10px;
+        top:-180px
+    } 
+
+    .small-image {
+        margin-top: 40px;
+    }
+
+    /* -- Section 4 -- */
+
+    #section-4 {
+        margin-top: 10vh;
+    }
+    .blog-container {
+        width:80%;
+    }
+
+    .footer {
+        bottom: 10px;
+    }
+
+
 }
